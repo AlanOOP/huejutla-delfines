@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-size: 2rem;
+    font-family: 'Inclusive Sans', sans-serif;
+    line-height: 1.5;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  [class*="contenedor"], 
+  main {
+    width: min(95%, 120rem);
+    margin: 3rem auto;
+  }
+  [class*="heading"] {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+    color: var(--primary);
+    margin: 5rem 0;
+  }
+  .error,
+  .error-enlace {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .error-enlace {
+    font-size: 1.8rem;
+    display: block;
+    text-decoration: none;
+    color: var(--primary);
+  }
+.header {
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .7)), url(../public/img/header.jpg);
+    padding: 5rem 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.drop {
+  background: #54ABFB;
+  border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+  opacity: 0.8;
+  border: 2px solid #3d93ff;
+}
+
+.drop-1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #42a5f5;
+  border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+  box-shadow: -20px 30px 16px #2196f3, -40px 60px 32px #2196f3, inset -6px 6px 10px #2196f3, inset 2px 6px 10px #1976d2, inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff;
+}
+
+.drop::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #E6FDFB;
+  border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+  left: 130px;
+  top: 40px;
+  box-shadow: 16px 40px 0 -10px white;
+  opacity: 0.8;
+}
+
+.drop-1 {
+  position: absolute;
+  content: '';
+  height: 600px;
+  width: 600px;
+  /* border-radius: 50%; */
+  left: -12%;
+  bottom: -40%;
+  /* background: linear-gradient(45deg, #1e88e5, #fafafa); */
+  animation: object1 6s linear infinite;
+}
+
+.drop-2 {
+  position: absolute;
+  content: '';
+  height: 200px;
+  width: 200px;
+  /* border-radius: 50%; */
+  left: 5%;
+  bottom: 15%;
+  /* background: linear-gradient(45deg, #1e88e5, #fafafa); */
+  animation: object2 6s linear infinite;
+  /* border-radius: 46% 50% 39% 54% / 56% 57% 50% 50%; */
+}
